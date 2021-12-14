@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Currency Predictioni Prices for Tomorrow</title>
+    </head>
+    <body>
+        <header class="flex gap-x-8 justify-center items-center h-32 bg-green-300">
+            <img src="http://www.dikti.go.id/microcredential-ai/assets/1.png" alt="Logo" style="width:200px">
+            <img
+                class="h-16"
+                src="http://www.dikti.go.id/microcredential-ai/assets/kampus-merdeka.png"
+                alt=""
+            />
+            <img
+                class="h-16"
+                src="http://www.dikti.go.id/microcredential-ai/assets/2.png"
+                alt=""
+            />
+        </header>
+        <section
+            class="
+                flex
+                justify-center
+                items-center
+                w-screen
+                h-screen
+                bg-green-300
+            "
+        >
+            <main
+                class="
+                    flex flex-col
+                    justify-center
+                    items-center
+                    p-16
+                    bg-gray-50	
+                    shadow-md
+                    rounded-lg
+                "
+            >
+                <h1 class="text-3xl text-bold">Currency Predictions for Tomorrow</h1>
+
+
+                >
+                    <p class="text-center">
+                        Choose the Currency Ticker
+                    </p>
+                </div>
+                <p class="mb-8">Hasil Prediksi: {{prediction}}</p>
+
+                <form
+                    method="post"
+                    enctype="multipart/form-data"
+                    class="flex flex-col"
+                >
+                    <input
+                        type="text"
+                        name="Currency"
+                        class="
+                            mb-4
+                            p-4
+                            border-8 border-gray-200
+                            rounded-md
+                            bg-gray-100
+                        "
+                    />
+                    <button
+                        type="submit"
+                        class="p-4 bg-green-500	 text-white rounded-md"
+                    >
+                        Prices Prediction
+                    </button>
+                </form>
+            </main>
+        </section>
+    </body>
+</html>
