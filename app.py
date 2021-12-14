@@ -9,7 +9,7 @@ from keras.layers import Dense, LSTM, Dropout
 from flask import flash, render_template, request, send_from_directory
 
 app=flash(__name__)
-model = load_model(r'C:\Users\ASUS\Desktop\Data Scientist\SPADADIKTI\Project\model.stockmarket')
+model = load_model('model.stockmarket')
 
 @app.route('/')
 def home():
